@@ -8,98 +8,182 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gallery Assignment by Jim Han</title>
+
+        <style>
+            header {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 120px;
+                color: white;
+                background: white;
+                font-family: Impact, calibri, fantasy;
+                -webkit-text-stroke: 1px darkolivegreen;
+                font-weight: bold;
+                font-size:xx-large;
+                display: flex;
+                letter-spacing:5px;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                border-color:darkolivegreen;
+                border-width:10px 0px 10px 0px;
+                border-style:solid;
+            }
+            body {
+                padding-top: 110px;
+                align-items: center;
+                width: 100%;
+                height: auto;
+            }
+    
+            img {
+                margin:10px;
+                width:400px;
+                height:300px;
+                padding:1rem;
+                border-radius:30px;
+            }
+    
+            section{
+                width:700px;
+                margin: 0 auto;
+                margin-top:50px;
+                border:solid darkolivegreen;
+                border-width: 5px 5px 5px 5px;
+                font-family:"Lucida Console", calibri, sans-serif;
+                font-size:13px;
+                border-radius:30px;
+                box-shadow: 5px 5px 5px 5px grey;
+            }
+    
+            hr{
+                width:auto;
+                height:5px;
+                background-color:darkolivegreen;
+                border:0px;
+            }
+    
+            ul{
+                margin:10px;
+            }
+    
+            nav{
+                position:fixed;
+                width:300px;
+                left:78%;
+                margin-top:50px;
+                margin-right:30px;
+                border:solid darkolivegreen;
+                border-width: 5px 5px 5px 5px;
+                border-radius: 30px;
+            }
+    
+            .nav:link{
+                font-family:courier;
+                font-size:12px;
+                font-weight: bold;
+                color:black;
+                text-decoration-line:none;
+            }
+    
+            .nav:visited{
+                text-decoration:none;
+                color:black;
+            }
+            
+            .nav:hover{
+                background-color:black;
+                color:white;
+            }
+    
+            .nav:active{
+                text-decoration:none;
+                color:black;
+            }
+    
+            h1, h2, h3, h4, h5{
+                font-family: "MS Gothic", calibri;
+                font-weight:bold;
+                font-size: 18px;
+            }
+    
+            h6{
+                font-family: "Bodoni MT black", impact, sans-serif;
+                letter-spacing: 2px;
+                font-weight:bold;
+                font-size:15px;
+                margin:5px;
+                color:white;
+                -webkit-text-stroke: 1px darkolivegreen;
+            }
+    
+            .arrow {
+                height:20px;
+                width:20px;
+                display:block;
+                margin:auto;
+            }
+
+            .leftpic{
+                float:left; 
+                height:350px; 
+                width:65%;
+            }
+
+            .rightpic{
+                float:right; 
+                height:350px; 
+                width:65%;
+            }
+
+            .lefttxt{
+                float:left; 
+                text-align:right;
+                height:350px; 
+                width:35%;
+            }
+
+            .righttxt{
+                float:right; 
+                height:350px; 
+                width:35%;
+            }
+    
+            #hilite{
+                color:darkolivegreen;
+                font-family:"French Script MT", Impact, fantasy;
+                font-size:xx-large;
+            }
+    
+    
+        </style>
     </head>
 
-    <style>
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            height: 75px;
-            padding: 1rem;
-            color: black;
-            background: white;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-        }
-        body {
-            padding-top: 100px;
-            align-items: center;
-            width: 100%;
-            height: auto;
-        }
-
-        img {
-            margin:10px;
-            width:400px;
-            height:300px;
-            padding:1rem;
-        }
-
-        section{
-            width:700px;
-            margin: 0 auto;
-            margin-top:20px;
-            border:solid black;
-        }
-
-        hr{
-            height:5px;
-        }
-
-        nav{
-            position:absolute;
-            width:300px;
-            left:80%;
-            margin-top:20px;
-            margin-right:30px;
-        }
-
-        #thick {
-            border-width:6px 0px 6px 0px;
-            border-style:solid;
-        }
-
-        #normal {
-            border:solid black
-        }
-
-        #arrow {
-            height:20px;
-            width:20px;
-            align-self:center; 
-        }
-
-
-    </style>
-
-    <header id="thick">
-    At the Gallery<br>
-    The Salvador Daly Virtual Collection
-    </header>
-    
     <body>
+        <header id="beginning">
+            <p>At the Gallery<br>
+            The <span id="hilite">Salvador Daly</span> Virtual Collection</p>
+            </header>
+
         <nav id="normal">
-            <h6 style="text-align:center;">Available Selection</h6>
+            <h6 style="text-align:center">Available Selection</h6>
             <ul style="list-style: none;text-align:right;">
-                <li><a href="#memory">The Persistence of Memory</a></li>
-                <li><a href="#temptation">The Temptation</a></li>
-                <li><a href="#giraffe">The Burning Giraffe</a></li>
-                <li><a href="#swan">Swans Reflecting Elephants</a></li>
-                <li><a href="#sacrament">The Sacrament of the Last Supper</a></li>
+                <li><a class="nav" href="#memory">The Persistence of Memory</a></li>
+                <li><a class="nav" href="#temptation">The Temptation</a></li>
+                <li><a class="nav" href="#giraffe">The Burning Giraffe</a></li>
+                <li><a class="nav" href="#swan">Swans Reflecting Elephants</a></li>
+                <li><a class="nav" href="#sacrament">The Sacrament of the Last Supper</a></li>
             </ul>
         </nav>
-        <a name="beginning"></a>
+        
         <section>
-        <a name="memory"></a>
-        <article style="float:left; height:350px; width:65%">
-            <img src="the-persistence-of-memory-1931.jpg">
+        <article class="leftpic" id="memory">
+            <img src="the-persistence-of-memory-1931.jpg" alt="The Persistence of Memory">
         </article>
         
-        <article style="float:right; height:350px; width:35%">
+        <article class="righttxt">
             <h1>Daly, Salvador</h1>
             The Persistence of Memory<br>
             1931<br>
@@ -107,12 +191,11 @@
             24 cm x 33 cm<br>
         </article>
         <a href="#beginning">
-            <img src="uparrow.png" id="arrow">
+            <img src="uparrow.png" class="arrow" alt="uparrow">
         </a>
-        <hr> <a name="temptation"></a>
+        <hr>
 
-        <article style="float:left; text-align:right; 
-        height:350px; width:35%">
+        <article class="lefttxt" id="temptation">
             <h2>Daly, Salvador</h2>
                 The Temptation<br>
                 1946<br>
@@ -120,31 +203,32 @@
                 90 cm × 119.5 cm<br>
         </article>
 
-        <article sytle="float:right; height:350px; width:65%">
-            <img src="The-Temptation.jpg">
+        <article class="rightpic">
+            <img src="The-Temptation.jpg" alt="The Temptation">
         </article>
+        <br>
         <a href="#beginning">
-            <img src="uparrow.png" id="arrow">
+            <img src="uparrow.png" class="arrow" alt="uparrow">
         </a>
         <hr>
-        <a name="giraffe"></a>
-        <article style="float:right; height:350px; width:35%">
+        
+        <article class="righttxt" id="giraffe">
             <h3>Daly, Salvador</h3>
             The Burning Giraffe<br>
             1937<br>
             Oil on Panel<br>
             35 cm × 27 cm<br>
         </article>
-        <article sytle="float:left; height:350px; width:65%">
-            <img src="The_Burning_Giraffe.jpg">
+        <article class="leftpic">
+            <img src="The_Burning_Giraffe.jpg" alt="The Burning Giraffe">
         </article>
+        <br>
         <a href="#beginning">
-            <img src="uparrow.png" id="arrow">
+            <img src="uparrow.png" class="arrow" alt="uparrow">
         </a>
         <hr>
-        <a name="swan"></a>
-        <article style="float:left; text-align:right; 
-        height:350px; width:35%">
+        
+        <article class="lefttxt" id="swan">
             <h4>Daly, Salvador</h4>
                 Swans Reflecting Elephants<br>
                 1937<br>
@@ -152,15 +236,16 @@
                 51 cm x 77 cm<br>
         </article>
         
-        <article sytle="float:left; height:350px; width:65%">
-            <img src="Swans_reflecting_elephants.jpg">
+        <article class="rightpic">
+            <img src="Swans_reflecting_elephants.jpg" alt="Swans Reflecting Elephants">
         </article>
+        <br>
         <a href="#beginning">
-            <img src="uparrow.png" id="arrow">
+            <img src="uparrow.png" class="arrow" alt="uparrow">
         </a>
         <hr>
-        <a name="sacrament"></a>
-        <article style="float:right; height:350px; width:35%">
+        
+        <article class="lefttxt" id="sacrament">
             <h5>Daly, Salvador</h5>
                 The Sacrament of the Last Supper<br>
                 1955<br>
@@ -168,11 +253,12 @@
                 267 cm × 166.7 cm<br>
         </article>
 
-        <article sytle="float:left; height:350px; width:65%">
-            <img src="Dali_-_The_Sacrament_of_the_Last_Supper_-_lowres.jpg">
+        <article class="rightpic">
+            <img src="Dali_-_The_Sacrament_of_the_Last_Supper_-_lowres.jpg" alt="The Sacrament of the Last Supper">
         </article>
+        <br>
         <a href="#beginning">
-            <img src="uparrow.png" id="arrow">
+            <img src="uparrow.png" class="arrow" alt="uparrow">
         </a>
         <hr>
         <article style="width:100%; text-align:right;">
@@ -181,12 +267,13 @@
                 Toronto, Ontario<br>
                 M1A 2B3</p>
             <p style="margin-right:10px;">You can also reach us by<br>
-                Email: <a href="mailto:jhan108@myseneca.ca">
+                Email: <a href="mailto:jhan108@myseneca.ca" class="mail">
                 jhan108myseneca.ca</a><br>
                 Telephone: 416-555-6789</p>
         </article>
+        <br>
         <a href="#beginning">
-            <img src="uparrow.png" id="arrow">
+            <img src="uparrow.png" class="arrow" alt="uparrow">
         </a>
         </section>
     </body>
